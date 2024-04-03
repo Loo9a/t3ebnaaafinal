@@ -1,0 +1,74 @@
+
+  <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">أهلا و سهلا</h1><br>
+                    <h1 class="display-3 text-white animated slideInDown"> شكرا لفتحك حساب جديد معنا     </h1>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+
+
+    <!-- detail Start -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <form (ngSubmit)="onSubmit()" #singupForm="ngForm" name="singupForm" style="margin: 50px;">
+                <div class="form-group text-md-end">
+                    <label for="prenom">الإسم</label>
+                    <input [(ngModel)]="singup.userName" name="userName" type="text" class="form-control form-control-lg" required>
+                </div>
+                <br>
+                <div class="form-group text-md-end">
+                    <label for="prenom">اللقب</label>
+                    <input [(ngModel)]="singup.lastName" name="lastName" type="text" class="form-control form-control-lg" required>
+                </div>
+                <br>
+                <div class="form-group text-md-end">
+                    <label for="prenom">البريد الإلكتروني</label>
+                    <input  [(ngModel)]="singup.email"type="text" name="email" id="email" class="form-control form-control-lg" required>
+                </div>
+                <br>
+                <div class="form-group text-md-end">
+                    <label for="mdp">كلمة السر</label>
+                    <input [(ngModel)]="singup.password" type="password" name="mdp" id="mdp" class="form-control form-control-lg" required>
+                </div>
+                <br>
+                <div class="mt-5 text-center">
+                    <input type="submit" class="btn btn-primary" value="فتح حساب">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+ <!-- Header End -->
+
+    
