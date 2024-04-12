@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { Al3aynAldhawe6Component } from './al3ayn-aldhawe-6.component';
+import { beforeEach } from 'node:test';
 
 describe('Al3aynAldhawe6Component', () => {
   let component: Al3aynAldhawe6Component;
