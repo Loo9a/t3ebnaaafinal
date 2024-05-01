@@ -1,0 +1,85 @@
+<app-nav2></app-nav2>
+<div class="container-fluid bg-primary py-5 mb-5 page-header">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h1 class="display-3 text-white animated slideInDown">مرحبا بكم في فضاء الولي </h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="button-container text-right">
+        <button class="side-button text-right"(click)="toggleFormVisibility()" >إضافة تلميذ جديد</button>
+        <button class="side-button text-right" >قائمة التلاميذ</button>
+        <button class="side-button text-right">متابعة تقدم التلاميذ</button>
+    </div>
+</div>
+
+<div class="container" id="form-container" style="display: none;">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 text-center" >
+            <h1>إضافة تلميذ جديد</h1>
+            <form id="myForm" (submit)="onSubmit()">
+                <div class="text-right">
+                    <label for="field1">الإسم</label>
+                    <input type="text" class="form-control text-right" id="field1" placeholder="الإسم" [(ngModel)]="formData.field1" name="field1">
+                </div>
+                <div class="text-right">
+                    <label for="field2"> اللقب </label>
+                    <input type="text" class="form-control text-right" id="field2" placeholder="اللقب" [(ngModel)]="formData.field2" name="field2">
+                </div>
+               
+                
+                <div class="text-right">
+                    <label for="list">القسم</label>
+                    <select class="form-control text-right" id="list" [(ngModel)]="formData.list" name="list">
+                        <option value="السنة أولى إبتدائي">السنة أولى إبتدائي</option>
+                        <option value="السنة ثانية إبتدائي">السنة ثانية إبتدائي</option>
+                        <option value="السنة ثالثة إبتدائي">السنة ثالثة إبتدائي</option>
+                        <option value="السنة رابعة إبتدائي">السنة رابعة إبتدائي</option>
+                        <option value="السنة خامسة  إبتدائي">السنة خامسة  إبتدائي</option>
+                        <option value="السنة سادسة  إبتدائي">السنة سادسة  إبتدائي</option>
+                    </select>
+                </div>
+                
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="container"  id="table-container" style="display: none;">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 text-center" >
+            <h1>قائمة التلاميذ</h1>
+            <table  class="table text-md-end" >
+                <thead>
+                    <tr>
+                       
+                        <th>القسم</th>
+                    
+                        <th>اللقب</th>
+                        <th>الإسم</th>
+                        <th>#</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let submission of formSubmissions; let i = index">
+                       
+                        <td>{{ submission.list }}</td>
+                        <td>{{ submission.field2 }}</td>
+                        <td>{{ submission.field1 }}</td>
+                        <td>{{ i + 1 }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<br><br>
+<br>
+<br>

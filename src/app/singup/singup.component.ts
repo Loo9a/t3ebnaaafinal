@@ -1,39 +1,28 @@
 import { Component } from '@angular/core';
-import { SingupService } from '../Services/singup.service';
+import { SignupService } from '../Services/singup.service';
+import { Router } from '@angular/router';
 import { Compte } from '../Model/Compte';
-
-
 
 @Component({
   selector: 'app-singup',
   templateUrl: './singup.component.html',
-  styleUrl: './singup.component.css'
+  styleUrls: ['./singup.component.css']
 })
 export class SingupComponent {
-  singup: Compte = new Compte();
+  user: Compte = new Compte();
 
-  constructor(private sinupService: SingupService) { }
+  constructor(
+    private signupService: SignupService,
+    private router: Router
+  ) { }
 
-  onSubmit(): void {
-      this.sinupService.adduser(this.singup)
-
-      .subscribe(
-        response => {
-          console.log('details', this.singup);
-          console.log('Inscription réussie ! Réponse du serveur : ', response);
-        },
-        error => {
-          console.error('Erreur lors de linscription : ', error);
-          let errorMessage = 'Une erreur sest produite lors de linscription. Veuillez réessayer.';
-          if (error.status === 0) {
-            errorMessage = 'Impossible de contacter le serveur. Veuillez vérifier votre connexion Internet.';
-          } else if (error.error && error.error.message) {
-            errorMessage = error.error.message; 
-          }
-          alert(errorMessage);
-        }
-      );
-      }
+  register() {
+    this.signupService.register(this.user).subscribe(response => {
+      console.log('User registered successfully:', response);
+      alert('Registration successful!');
+      this.router.navigate(['/login']);
+    }, error => {
+      console.error('Registration failed:', error);
+    });
+  }
 }
-
-

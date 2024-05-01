@@ -81,9 +81,14 @@ import { AddTComponent } from './add-t/add-t.component';
 import { AllpComponent } from './allp/allp.component';
 import { AddpComponent } from './addp/addp.component';
 import { EditTComponent } from './edit-t/edit-t.component';
-import { SingupService } from './Services/singup.service';
+import { SignupService } from './Services/singup.service';
 import { ChatroomComponent } from './chatroom/chatroom.component';
 import { ChatbotComponent } from './chatbot/chatbot.component';
+import { ParentComponent } from './parent/parent.component';
+import { AuthService } from './Services/auth.service';
+import { LogoutService } from './Services/logout.service';
+
+import { ChatService } from './Services/chat-service.service';
 
 @NgModule({
   declarations: [
@@ -169,6 +174,8 @@ import { ChatbotComponent } from './chatbot/chatbot.component';
     NavComponent,
     NavadComponent,
     ChatbotComponent,
+    ParentComponent,
+  
   ],
 
 
@@ -180,7 +187,10 @@ import { ChatbotComponent } from './chatbot/chatbot.component';
   ],
   providers: [
     provideHttpClient(),
-    SingupService
+    SignupService,
+    AuthService,
+    LogoutService,
+    ChatService
   ],
   bootstrap: [AppComponent]
 })

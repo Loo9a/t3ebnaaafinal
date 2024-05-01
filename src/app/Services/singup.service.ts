@@ -1,3 +1,5 @@
+// signup.service.ts
+
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -6,18 +8,13 @@ import { Compte } from '../Model/Compte';
 @Injectable({
   providedIn: 'root'
 })
-export class SingupService { 
-
+export class SignupService {
+  private apiUrl = 'http://localhost:8087'; // Your backend authentication API endpoint
 
   constructor(private http: HttpClient) { }
 
-  public adduser(compte: any){
-    console.log(compte)
-    const headers = new HttpHeaders({'Content-Type': 'application/json'});
-    return this.http.post<any>('http://localhost:8087/comptes/inscription', compte );
-    
+  register(user: Compte): Observable<any> {
+    return this.http.post(`${this.apiUrl}/register`, user);
   }
-
-
-
 }
+

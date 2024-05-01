@@ -76,6 +76,7 @@ import { ChatroomComponent } from './chatroom/chatroom.component';
 import { NavComponent } from './nav/nav.component';
 import { Nav2Component } from './nav2/nav2.component';
 import { ChatbotComponent } from './chatbot/chatbot.component';
+import { ParentComponent } from './parent/parent.component';
 
 
 
@@ -156,7 +157,8 @@ const routes: Routes = [
 {path : "allp", component : AllpComponent},
 {path : "addp", component : AddpComponent},
 {path : "chat", component :ChatroomComponent},
-{path : "chatbot", component : ChatbotComponent}
+{path : "chatbot", component : ChatbotComponent},
+{path : "parent", component : ParentComponent}
 ];
 
 
