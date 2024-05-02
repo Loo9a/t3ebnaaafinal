@@ -88,9 +88,9 @@
    <div class="row g-2">
     <div class="col-lg-6">
         <div class="text-center"><br><br>التعليمة 1  &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;التعليمة 2  &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; التعليمة 3 <br><br>
-            <textarea></textarea>      &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;
-            <textarea></textarea>      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
-            <textarea></textarea>      
+            <textarea  type="text"  name="text" class="question8" id="a1"></textarea>      &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;
+            <textarea  type="text"  name="text" class="question8" id="a2"></textarea>      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+            <textarea  type="text"  name="text" class="question8" id="a3"></textarea>      
            </div>
     </div>
     <div class="col-lg-6">
@@ -100,10 +100,6 @@
     </div>
    </div>
    
-   
-   <div class="mt-5 text-center">
-   <a class="btn btn-outline-warning" href=""> أنهيت عملي</a>
-   </div>
 
 
 <br><br><br><br>
@@ -114,12 +110,17 @@
 </h3><br>
 <br>
 <div class="text-center">
-<textarea></textarea>
+<textarea  type="text"  name="text" class="question8" id="a4"></textarea>
 </div>
 
+
 <div class="mt-5 text-center">
-<a class="btn btn-outline-warning" href=""> أنهيت عملي</a>
-</div>
+    <a class="btn btn-outline-warning" id="checkButton8"> أنهيت عملي</a>
+    </div>
+    <br><br><br> 
+    <div id="corrections8" style="text-align: center;">
+        <!-- Les corrections seront affichées ici -->
+    </div>  
 
 
 
@@ -155,7 +156,7 @@
                 للهواء كتلة   :       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     نعم </strong>
         
         
-                 <input type="checkbox" name="" ><strong>
+                <input type="checkbox" class="question3" name="" ><strong>
                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     لا    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
             
         
@@ -173,7 +174,7 @@
                 :       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     نعم </strong>
            
            
-                    <input type="checkbox" name="" ><strong>
+                <input type="checkbox" class="question3" name="" ><strong>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     لا    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                
            
@@ -189,7 +190,7 @@
                 الهواء غير قابل للانظغاط الانتشار         :       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     نعم </strong>
            
            
-                    <input type="checkbox" name="" ><strong>
+                <input type="checkbox" class="question3" name="" ><strong>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     لا    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                
            
@@ -205,7 +206,7 @@
                 :       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     نعم </strong>
            
            
-                    <input type="checkbox" name="" ><strong>
+                <input type="checkbox" class="question3" name="" ><strong>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     لا    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                
            
@@ -224,7 +225,7 @@
                 الهواء الساخن أخف من الهواء البارد      :       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     نعم </strong>
            
            
-                    <input type="checkbox" name="" ><strong>
+                <input type="checkbox" class="question3" name="" ><strong>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     لا    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                
            
@@ -240,7 +241,7 @@
                 :        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     نعم </strong>
            
            
-                    <input type="checkbox" name="" ><strong>
+                <input type="checkbox" class="question3" name="" ><strong>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     لا    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                
            
@@ -257,7 +258,7 @@
                 :        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     نعم </strong>
            
            
-                    <input type="checkbox" name="" ><strong>
+                <input type="checkbox" class="question3" name="" ><strong>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     لا    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                
            
@@ -271,7 +272,7 @@
                 :        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     نعم </strong>
            
            
-                    <input type="checkbox" name="" ><strong>
+                <input type="checkbox" class="question3" name="" ><strong>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     لا    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                
            
@@ -285,7 +286,7 @@
                 :        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     نعم </strong>
            
            
-                    <input type="checkbox" name="" ><strong>
+                <input type="checkbox" class="question3" name="" ><strong>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     لا    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                
            
@@ -299,7 +300,7 @@
                 :        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     نعم </strong>
            
            
-                    <input type="checkbox" name="" ><strong>
+                <input type="checkbox" class="question3" name="" ><strong>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     لا    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                
            
@@ -312,10 +313,15 @@
 
 
     </div>
+                           
+    <div class="mt-5 text-center ">
+        <a class="btn btn-outline-warning "  id="checkButton3"> أنهيت عملي</a>
+        </div> 
+         <br><br><br> 
 
-<div class="mt-5 text-center">
-<a class="btn btn-outline-warning" href=""> أنهيت عملي</a>
-</div>
+         <div class="text-center" id="corrections3">
+            <!-- Les corrections seront affichées ici -->
+        </div>
     
 
 
@@ -393,7 +399,7 @@
                                 يكون الاحتراق تاما في الهواء   :       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     نعم </strong>
                         
                         
-                                 <input type="checkbox" name="" ><strong>
+                                <input type="checkbox" class="question1" name="" ><strong>
                                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     لا    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                             
                         
@@ -411,7 +417,7 @@
                                 :       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     نعم </strong>
                            
                            
-                                    <input type="checkbox" name="" ><strong>
+                                <input type="checkbox" class="question1" name="" ><strong>
                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     لا    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                                
                            
@@ -427,7 +433,7 @@
                                 الأكسجين ليس له دور في عمليّة الاحتراق      :       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     نعم </strong>
                            
                            
-                                    <input type="checkbox" name="" ><strong>
+                                <input type="checkbox" class="question1" name="" ><strong>
                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     لا    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                                
                            
@@ -443,7 +449,7 @@
                                 :       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     نعم </strong>
                            
                            
-                                    <input type="checkbox" name="" ><strong>
+                                <input type="checkbox" class="question1" name="" ><strong>
                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     لا    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                                
                            
@@ -462,7 +468,7 @@
                                 يتعكر ماء الجير عند اتّحاده بغاز بخار الماء      :       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     نعم </strong>
                            
                            
-                                    <input type="checkbox" name="" ><strong>
+                                <input type="checkbox" class="question1" name="" ><strong>
                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     لا    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                                
                            
@@ -478,7 +484,7 @@
                                 :        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     نعم </strong>
                            
                            
-                                    <input type="checkbox" name="" ><strong>
+                                <input type="checkbox" class="question1" name="" ><strong>
                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     لا    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                                
                            
@@ -493,7 +499,7 @@
                                 غاز أحادي أكسيد الكربون من نواتج الاحتراق التام     :       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     نعم </strong>
                            
                            
-                                    <input type="checkbox" name="" ><strong>
+                                <input type="checkbox" class="question1" name="" ><strong>
                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     لا    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                                
                            
@@ -507,7 +513,7 @@
                                 الدوار و الاختناق في مكان مغلق به تدفئة دليل على نقص ثاني أكسيد الكربون   :       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     نعم </strong>
                            
                            
-                                    <input type="checkbox" name="" ><strong>
+                                <input type="checkbox" class="question1" name="" ><strong>
                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     لا    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                                
                            
@@ -521,7 +527,7 @@
                                 إحتراق النفط أبطأ من احتراق البنزين و الكحول     :       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     نعم </strong>
                            
                            
-                                    <input type="checkbox" name="" ><strong>
+                                <input type="checkbox" class="question1" name="" ><strong>
                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     لا    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                                
                            
@@ -535,7 +541,7 @@
                                 تمثل المنطقة القاتمة  في لهب الشمعة غاز الأكسجين     :       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     نعم </strong>
                            
                            
-                                    <input type="checkbox" name="" ><strong>
+                                <input type="checkbox" class="question1" name="" ><strong>
                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     لا    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                                
                            
@@ -549,7 +555,7 @@
                                 تمثل المنطقة الصفراء في لهب الشمعة المنطقة المضيئة    :       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     نعم </strong>
                            
                            
-                                    <input type="checkbox" name="" ><strong>
+                                <input type="checkbox" class="question1" name="" ><strong>
                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     لا    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                                
                            
@@ -559,9 +565,12 @@
                 
                     </div>
                 
-                <div class="mt-5 text-center">
-                <a class="btn btn-outline-warning" href=""> أنهيت عملي</a>
-                </div>
+                    <div class="mt-5 text-center">
+                        <a class="btn btn-outline-warning"  id="checkButton1"> أنهيت عملي</a>
+                    </div> 
+                    <br><br><br> <div class="text-center" id="corrections1">
+                        <!-- Les corrections seront affichées ici -->
+                    </div>
                                     
                 
                 <br><br><br><br><br>

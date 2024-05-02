@@ -17,6 +17,7 @@ export class Altanaql3Component  implements OnInit {
     if (typeof document !== 'undefined') {
 
  
+
   const checkButton4 = document.getElementById('checkButton4') as HTMLButtonElement;
   const correctionsDiv4 = document.getElementById('corrections4') as HTMLDivElement;
   const questions4 = document.querySelectorAll('.question4') as NodeListOf<HTMLInputElement>;
@@ -106,7 +107,7 @@ checkButton5.addEventListener('click', () => {
     const isCorrect5 = answers[index].toLowerCase() === correctAnswers5[index].toLowerCase();
 
     const correctionText5 = document.createElement('p');
-    correctionText5.textContent = (isCorrect5 ? 'أحسنت الإختيار هذا الجواب صحيح' : 'لقد أخطأت هذا الجواب غير صحيح ');
+    correctionText5.textContent = (isCorrect5 ? 'أحسنت الإختيار هذا الجواب صحيح' : 'لقد أخطأت هذا الجواب غير صحيح و هذا هو الجواب الصحيح : المجموعة 1 : دجاجة بطريق نعامة. وجه الشبه : في هذه المجموعة يوجد طيور لا تستطيع الطيران بسبب وزنها الزائد أم بسبب أجنحتها الصغيرة. المجموعة 2 : نمر أسد فهد غزالة. وجه الشبه : في هذه المجموعة يوجد حيوانات تتنقل عدوا. المجموعة 3 : ببغاء عصفور حمامة صقر نسر.  وجه الشبه : في هذه المجموعة يوجد طيور. ');
     correctionText5.style.color = isCorrect5 ? 'green' : 'red';
 
     correctionsDiv5.appendChild(correctionText5);

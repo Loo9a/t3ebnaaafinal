@@ -76,7 +76,12 @@ import { ChatroomComponent } from './chatroom/chatroom.component';
 import { NavComponent } from './nav/nav.component';
 import { Nav2Component } from './nav2/nav2.component';
 import { ChatbotComponent } from './chatbot/chatbot.component';
+<<<<<<< Updated upstream
 import { ParentComponent } from './parent/parent.component';
+=======
+import { Alzaman4Component } from './alzaman-4/alzaman-4.component';
+import { AltakatherAlnmwComponent } from './altakather-alnmw/altakather-alnmw.component';
+>>>>>>> Stashed changes
 
 
 
@@ -129,6 +134,8 @@ const routes: Routes = [
 {path : "rab3a-tr1", component : Rab3aTr1Component},
 {path : "rab3a-tr2", component : Rab3aTr2Component},
 {path : "rab3a-tr3", component : Rab3aTr3Component},
+{path : "alzaman-4", component : Alzaman4Component},
+{path : "altakather-alnmw", component : AltakatherAlnmwComponent},
 {path : "alhawas-alwiqaya-4", component : AlhawasAlwiqaya4Component},
 {path : "altaghdhia-4", component : Altaghdhia4Component},
 {path : "altanaql-4", component : Altanaql4Component},
