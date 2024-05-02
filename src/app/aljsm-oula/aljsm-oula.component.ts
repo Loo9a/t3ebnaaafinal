@@ -71,6 +71,7 @@ if (typeof document !== 'undefined') {
 
                     isCorrect6 ? listT.push("TRUE") : listF.push("FALSE");
                 });
+                
 
                 const correctionText2 = document.createElement('p');
                 correctionsDiv9.innerHTML = '';

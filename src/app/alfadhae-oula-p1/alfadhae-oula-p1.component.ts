@@ -15,6 +15,7 @@ export class AlfadhaeOulaP1Component implements OnInit {
   initializeListeners() {
     if (typeof document !== 'undefined') {
       // Partie 1
+      
       const checkButton = document.getElementById('checkButton') as HTMLButtonElement;
       const correctionsDiv = document.getElementById('corrections') as HTMLDivElement;
       const questions = document.querySelectorAll('.question') as NodeListOf<HTMLInputElement>;
@@ -76,6 +77,8 @@ export class AlfadhaeOulaP1Component implements OnInit {
         verifierReponses(questions3, correctionsDiv3, correctAnswers3, nbReponsesVrai, nbReponsesFaux);
       }); 
 
+
+      
       // Partie 4
       const checkButton4 = document.getElementById('checkButton4') as HTMLButtonElement;
       const correctionsDiv4 = document.getElementById('corrections4') as HTMLDivElement;
@@ -169,6 +172,25 @@ export class AlfadhaeOulaP1Component implements OnInit {
         
         });
       
+
+
+//partie 7
+
+//chouf altaghia-3 feha checkbutton7 w nafs l'exercice
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         
